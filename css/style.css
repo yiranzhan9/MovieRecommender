@@ -1,0 +1,25 @@
+h1{
+    padding: 10px;
+}
+div {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+input[type=text]{
+    background-color: cyan;
+}
+a:hover{
+    color: cyan;
+}
+table {
+    padding: 20px;
+    padding-right: 200px;
+    padding-left: 50px;
+}
+td {
+    padding: 15px;
+}
+
+li {
+    list-style-type:none
+}
