@@ -4,7 +4,7 @@ import pandas
 
 #Connect to local MySQL server
 conn = mysql.connector.connect(user='root',
-                               password='ThisIsASecurePassword1313',
+                               password='vhyirj981022',
                                host='localhost')
 cursor = conn.cursor()
 #Remove and Re-add database
@@ -28,7 +28,7 @@ Movie[cols] = Movie[cols].replace({'"': '\\"'}, regex=True)
 
 #Connect to MovieRecommender database on local server
 conn = mysql.connector.connect(user='root',
-                               password='ThisIsASecurePassword1313',
+                               password='vhyirj981022',
                                host='localhost',
                                database='MovieRecommender')
 cursor = conn.cursor()
@@ -37,7 +37,7 @@ cursor = conn.cursor()
 cursor.execute("CREATE TABLE Movie(MovieId INT AUTO_INCREMENT PRIMARY KEY, Title VARCHAR(128), Year INT(4), Description VARCHAR(255))")
 cursor.execute("CREATE TABLE Ratings(RatingId INT AUTO_INCREMENT PRIMARY KEY, MovieId INT, Rating INT, FOREIGN KEY (MovieId) REFERENCES Movie(MovieId))")
 cursor.execute("CREATE TABLE Director(DirectorId INT AUTO_INCREMENT PRIMARY KEY,FirstName VARCHAR(50),LastName VARCHAR(50))")
-cursor.execute("CREATE TABLE GenreToMovie(MovieId INT, Genre VARCHAR(50),FOREIGN KEY (MovieId) REFERENCES Movie(MovieId))")
+cursor.execute("CREATE TABLE GenreToMovie(MovieId INT, Genre VARCHAR(50), FOREIGN KEY (MovieId) REFERENCES Movie(MovieId))")
 cursor.execute("CREATE TABLE DirectorToMovie(DirectorId INT,MovieId INT, FOREIGN KEY (MovieId) REFERENCES Movie(MovieId),FOREIGN KEY (DirectorId) REFERENCES Director(DirectorId))")
 
 #Create table with ratings for each movie

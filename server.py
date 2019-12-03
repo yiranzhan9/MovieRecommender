@@ -9,7 +9,7 @@ from io import BytesIO
 
 #Open connection to DataBase
 conn = mysql.connector.connect(user='root',
-                               password='ThisIsASecurePassword1313',
+                               password='vhyirj981022',
                                host='localhost',
                                database='MovieRecommender')
 cursor = conn.cursor()
