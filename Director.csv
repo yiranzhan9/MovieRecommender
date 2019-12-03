@@ -2,7 +2,7 @@ DirectorId,FirstName,LastName
 1,Theodore,Melfi
 2,Blake,Edwards
 3,Chris,Columbus
-4,Alfonso,Cuar√≥n
+4,Alfonso,CuarÃ_n
 5,Mike,Newell
 6,David,Yates
 7,Jon,Watts
@@ -11,3 +11,5 @@ DirectorId,FirstName,LastName
 10,Byron,Howard
 11,Rich,Moore
 12,Jared,Bush
+13,John,Carpenter
+14,Matthijs van,Heijningen
