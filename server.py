@@ -33,7 +33,7 @@ rateStart = """<!DOCTYPE html>
     <div>
         <form method="post">
             <div>
-                <label for="movie">Movie: </label>
+                <label for="movieTitle">Movie: </label>
                 <select name="movieTitle" required>"""
 rateEnd = """</select>
             </div>
